@@ -37,7 +37,9 @@ export default function Home() {
               Видеоклипы на песни «Лёд» и «Миллионер из трущоб» с участием Скриптонита набрали миллионы просмотров на YouTube.
               На данный момент у Адиля уже 5 студийных альбомов.
             </p>
-            <a href="#" className='more'>подробнее...</a>
+            <div className="more">
+              <a href="#" className=''>подробнее...</a>
+            </div>
             <div className="avatar">
               <img src="/images/avatar.jpg" alt="Skriptonit profile picture." />
             </div>
