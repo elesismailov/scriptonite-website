@@ -10,7 +10,7 @@ section.albums {
         margin-bottom: 60px;
     }
 
-    ul {
+    > ul {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
         justify-items: center;
@@ -26,16 +26,45 @@ section.albums {
             border-radius: 5px;
             overflow: hidden;
 
+            border: solid 1px #fff;
             box-shadow: 0px 0px 51px  0px var(--neon-blue);
 
-            transition: 150ms ease all;
+            transition: 50ms ease all;
 
-            &:hover {
+            position: relative;
+            .links {
+                position: absolute;
+                display: none;
+                width: 100%;
+                height: 100%;
+                grid-template-columns: 1fr 1fr;
+                z-index: 3;
+                list-style: none;
+                padding: 20px;
+
+                > li {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    > a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
             }
 
-            &.hovered {
-                box-shadow: 0px 0px 51px  0px #fff;
-                
+            &.hovered, &:hover {
+                box-shadow: 0px 0px 51px  5px #fff;
+                .links {
+                    display: grid;
+                }
+                > img {
+                    filter: blur(4px) brightness(50%);
+                }
+
             }
         }
     }
