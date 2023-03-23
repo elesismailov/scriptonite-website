@@ -2,7 +2,7 @@
 
 section.albums {
 
-    margin-bottom: 90px;
+    margin-bottom: 150px;
 
     h2 {
         text-align: center;
@@ -82,6 +82,23 @@ section.albums {
         > ul {
             padding: 0 25px;
             gap: 50px;
+
+            // no transitions
+            > li {
+                border: none;
+                transition-property: box-shadow;
+                > img {
+                    transition: none;
+                }
+            }
+            // no transitions
+        }
+    }
+    @media only screen and (max-width: 1024px) {
+        > ul {
+            padding: 0 45px;
+            gap: 20px;
+
         }
     }
 }

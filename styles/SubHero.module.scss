@@ -30,4 +30,46 @@ section.sub-hero {
             border-radius: 5px 0 0 5px ;
         }
     }
+
+    @media only screen and (max-width: 1258px) {
+        flex-direction: column;
+
+        > div {
+            width: 80%;
+        }
+        .text-block {
+            padding: 40px 0 40px 20%;
+            margin-right: auto;
+            border-radius: 0 5px 0 0;
+        }
+        .preview-block {
+            margin-left: auto;
+            > img {
+                border-radius: 0 0 0 5px;
+            }
+        }
+    }
+
+
+    @media only screen and (max-width: 768px) {
+        > div {
+            width: 100%;
+            flex: 1;
+        }
+        .text-block {
+            padding: 40px 0;
+            align-items: center;
+            border-radius: 0;
+        }
+        .preview-block {
+            > img {
+                border-radius: 0;
+            }
+        }
+    }
+    @media only screen and (max-width: 450px) {
+        .text-block {
+            font-size: 60px;
+        }
+    }
 }
