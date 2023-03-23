@@ -8,7 +8,7 @@ export default function SectionAlbums() {
         <section className="albums">
             <h2>Альбомы доступны на всех площадках</h2>
             <ul>
-                <li onMouseOver={handleOver} onMouseOut={handleOut}>
+                <li>
                     <ul className="links">
                         <li><a href=""><SpotifyIcon /></a></li>
                         <li><a href=""><AppleMusicIcon /></a></li>
@@ -16,7 +16,7 @@ export default function SectionAlbums() {
                         <li><a href=""><SpotifyIcon /></a></li>
                     </ul>
                     <img src="/images/album-1.png" width='250' height='250' alt="Album Preview." /></li>
-                <li onMouseOver={handleOver} onMouseOut={handleOut}>
+                <li>
                     <ul className="links">
                         <li><a href=""><SpotifyIcon /></a></li>
                         <li><a href=""><AppleMusicIcon /></a></li>
@@ -24,7 +24,7 @@ export default function SectionAlbums() {
                         <li><a href=""><SpotifyIcon /></a></li>
                     </ul>
                     <img src="/images/album-2.png" width='250' height='250' alt="Album Preview." /></li>
-                <li onMouseOver={handleOver} onMouseOut={handleOut}>
+                <li>
                     <ul className="links">
                         <li><a href=""><SpotifyIcon /></a></li>
                         <li><a href=""><AppleMusicIcon /></a></li>
@@ -32,7 +32,7 @@ export default function SectionAlbums() {
                         <li><a href=""><SpotifyIcon /></a></li>
                     </ul>
                     <img src="/images/album-3.png" width='250' height='250' alt="Album Preview." /></li>
-                <li onMouseOver={handleOver} onMouseOut={handleOut}>
+                <li>
                     <ul className="links">
                         <li><a href=""><SpotifyIcon /></a></li>
                         <li><a href=""><AppleMusicIcon /></a></li>
@@ -40,7 +40,7 @@ export default function SectionAlbums() {
                         <li><a href=""><SpotifyIcon /></a></li>
                     </ul>
                     <img src="/images/album-4.png" width='250' height='250' alt="Album Preview." /></li>
-                <li onMouseOver={handleOver} onMouseOut={handleOut}>
+                <li>
                     <ul className="links">
                         <li><a href=""><SpotifyIcon /></a></li>
                         <li><a href=""><AppleMusicIcon /></a></li>
@@ -48,7 +48,7 @@ export default function SectionAlbums() {
                         <li><a href=""><SpotifyIcon /></a></li>
                     </ul>
                     <img src="/images/album-5.png" width='250' height='250' alt="Album Preview." /></li>
-                <li onMouseOver={handleOver} onMouseOut={handleOut}>
+                <li>
                     <ul className="links">
                         <li><a href=""><SpotifyIcon /></a></li>
                         <li><a href=""><AppleMusicIcon /></a></li>
@@ -59,17 +59,4 @@ export default function SectionAlbums() {
             </ul>
         </section>
     )
-}
-
-function handleOver(event) {
-    console.log('hovered')
-    console.log(event.target)
-    const album = event.target.parentElement;
-    album.classList.toggle('hovered')
-}
-
-function handleOut(event) {
-    console.log('left')
-    const album = event.target.parentElement;
-    album.classList.toggle('hovered')
 }

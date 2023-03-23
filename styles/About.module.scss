@@ -47,6 +47,16 @@ section.about {
 
         > li {
             width: 50px;
+            a {
+                display: flex;
+                border-radius: 9999px;
+                svg {
+
+                }
+            }
+            a:hover {
+                box-shadow: 0px 0px 51px  0px #fff;
+            }
         }
     }
 }
