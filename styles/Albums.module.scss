@@ -77,4 +77,11 @@ section.albums {
             }
         }
     }
+
+    @media only screen and (max-width: 450px) {
+        > ul {
+            padding: 0 25px;
+            gap: 50px;
+        }
+    }
 }
