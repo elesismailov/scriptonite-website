@@ -4,6 +4,9 @@ section.sub-hero {
 
     display: flex;
     justify-content: space-between;
+
+    max-width: 1440px;
+    margin: auto;
     margin-bottom: 90px;
 
     > div {

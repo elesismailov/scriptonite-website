@@ -1,7 +1,87 @@
 
 section.hero {
 
-    height: 100px;
-    background: #000;
-    
+    background-color: #000;
+    background-image: 
+        url("/images/intro-dust-particles.png"),
+        ;
+    background-repeat: repeat;
+    background-size: cover;
+
+    .wrapper {
+        display: flex;
+        max-width: 1440px;
+        margin: auto;
+
+        background-image: url("/images/scriptonite-bg-text.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+
+        > div {
+            width: 50%;
+        }
+
+        > .preview {
+            position: relative;
+            overflow-y: clip;
+            img {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 75%;
+                filter: 
+                        drop-shadow(0 0 1px #fff)
+                        drop-shadow(0 0 1px #fff)
+                        drop-shadow(0 0 1px #fff)
+                        drop-shadow(0 0 1px #fff)
+                        drop-shadow(0 0 1px #fff)
+                        drop-shadow(0 0 1px #fff)
+                        drop-shadow(0 -2px 28px var(--neon-blue))
+                        drop-shadow(0 -2px 28px var(--neon-blue))
+                        ;
+            }
+        }
+        .cta-block {
+            padding: 60px 150px 100px 100px;
+
+            &_wrapper {
+                .flex-wrapper {
+                    background: rgba(0, 0, 0, 50%);
+                    padding: 20px 40px;
+                    border-radius: 5px;
+
+                    .text-block {
+                        text-align: center;
+                        font-size: 24px;
+                        margin-bottom: 30px;
+                        h1 {
+                            font-size: 48px;
+                        }
+                    }
+                    .preview {
+                        
+                    }
+                }
+                .cta {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    border: 1px solid #fff;
+                    color: #fff;
+                    background: var(--neon-blue);
+                    border-radius: 5px;
+                    box-shadow: 0px 0px 51px  0px var(--neon-blue);
+                    margin-top: 30px;
+                    font-size: 24px;
+                    padding: 15px 0;
+                    &:hover {
+                        border: 1px solid #fff;
+                        box-shadow: 0px 0px 31px  1px #fff;
+                    }
+                }
+            }
+        }
+    }
 }
