@@ -2,6 +2,7 @@ import Head from 'next/head'
 
 import EmailForm from '@/components/EmailForm';
 import Footer from '@/components/Footer';
+import HeroSection from '@/components/HeroSection';
 import SectionAlbums from '@/components/SectionAlbums';
 
 
@@ -18,6 +19,7 @@ export default function Home() {
         <header></header>
         <main>
 
+          <HeroSection />
 
           <section className="sub-hero">
             <div className="text-block">
