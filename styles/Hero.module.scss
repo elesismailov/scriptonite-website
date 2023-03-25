@@ -10,7 +10,7 @@ section.hero {
 
     .wrapper {
         display: flex;
-        max-width: 1440px;
+        max-width: 1560px;
         margin: auto;
 
         background-image: url("/images/scriptonite-bg-text.png");
@@ -24,7 +24,7 @@ section.hero {
 
         > .preview {
             position: relative;
-            overflow-y: clip;
+            // overflow-y: clip;
             img {
                 position: absolute;
                 left: 0;
@@ -43,7 +43,7 @@ section.hero {
             }
         }
         .cta-block {
-            padding: 60px 150px 100px 100px;
+            padding: 60px 200px 140px 120px;
 
             &_wrapper {
                 .flex-wrapper {
@@ -55,7 +55,9 @@ section.hero {
                         text-align: center;
                         font-size: 24px;
                         margin-bottom: 30px;
+                        line-height: 1.2;
                         h1 {
+                            font-weight: 400;
                             font-size: 48px;
                         }
                     }
