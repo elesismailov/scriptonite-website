@@ -26,7 +26,10 @@ header.main-header {
                 gap: 30px;
                 list-style: none;
                 font-size: 16px;
-
+                
+                a:hover {
+                    color: var(--neon-blue);
+                }
                 .with_logo {
                     
                     > a {
@@ -36,6 +39,82 @@ header.main-header {
                         gap: 10px;
                         img {
                             width: 100px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1258px) {
+        
+        .main-wrapper {
+            .flex-wrapper {
+                flex-direction: column;
+                padding: 40px 100px 0;
+                > div {
+                    flex: unset;
+                }
+                .logo {
+                    margin-bottom: 30px;
+                }
+                .links {
+                     ul{
+                        gap: 80px;
+
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        .main-wrapper {
+            margin-bottom: 60px;
+
+            .flex-wrapper {
+                padding: 40px 60px 0;
+                .links {
+                    
+                    li:nth-child(1) {
+                        order: 1;
+                    }
+                    li:nth-child(3) {
+                        order: 2;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 600px) {
+        .main-wrapper {
+            margin-bottom: 70px;
+            .flex-wrapper {
+                flex-direction: column;
+
+                padding: 40px 25px 0;
+                > div {
+                    flex: unset;
+                }
+                .logo {
+                    max-width: 230px;
+                    margin-bottom: 30px;
+                }
+                .links {
+                    width: 100%;
+                     ul{
+                        font-size: 14px;
+                        gap: unset;
+                        justify-content: space-between;
+
+                        > li {
+                            //flex: 1;
+                            //text-align: center;
+                        }
+                        li:nth-child(1) {
+                            order: 1;
+                        }
+                        li:nth-child(3) {
+                            order: 2;
                         }
                     }
                 }
