@@ -22,13 +22,15 @@ export default function Home() {
           <HeroSection />
 
           <section className="sub-hero">
-            <div className="text-block">
-              <p>Innovation.</p>
-              <p>Talent.</p>
-              <p>Style.</p>
-            </div>
-            <div className="preview-block">
-              <img src="/images/preview-2.png" width='627' height='274' alt="Скриптонит на концерте держит микрофон." />
+            <div className="flex-wrapper">
+              <div className="text-block">
+                <p>Innovation.</p>
+                <p>Talent.</p>
+                <p>Style.</p>
+              </div>
+              <div className="preview-block">
+                <img src="/images/preview-2.png" width='627' height='274' alt="Скриптонит на концерте держит микрофон." />
+              </div>
             </div>
           </section>
 
