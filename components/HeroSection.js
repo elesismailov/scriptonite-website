@@ -1,8 +1,12 @@
+import Header from '@/components/Header';
 
 export default function HeroSection() {
 
     return (
         <section className="hero">
+            
+            <Header />
+
             <div className="wrapper">
 
                 <div className="preview">
