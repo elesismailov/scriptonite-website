@@ -59,8 +59,8 @@ section.albums {
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        width: 60px;
-                        height: 60px;
+                        width: 50px;
+                        height: 50px;
                     }
                 }
             }
@@ -107,6 +107,15 @@ section.albums {
                 height: calc(100vw - 90px);
                 transition-property: box-shadow;
 
+                .links {
+                    padding: 30px;
+                    li > a {
+                        width: 69px;
+                        svg {
+                            width: 100%;
+                        }
+                    }
+                }
                 > img {
                     transition: none;
                     height: 100%;

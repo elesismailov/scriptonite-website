@@ -18,8 +18,9 @@ export default function Footer() {
                     </a>
                 </div>
                 <div className="attribution">
-                    <p className="sa"><a href="#" >Designed by <span>sanzhar</span></a></p>
-                    <p className="el"><a href="http://elesismailov.com" >Coded by <span>eles</span></a></p>
+                    <p className="sa"><a href="https://www.instagram.com/severussanjik/" >Designed by <span>Sanzhar</span></a></p>
+                    {/* <p className="el"><a href="http://elesismailov.com" >Coded by <img width='100' src="/images/eles_ismailov_logo.png" alt="Text Eles Ismailov using Impact Font." /></a></p> */}
+                    <p className="el"><a href="http://elesismailov.com" >Coded by <span>Eles</span></a></p>
                 </div>
             </div>
         </footer>

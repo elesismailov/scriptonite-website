@@ -56,11 +56,16 @@ section.hero {
                         font-size: 24px;
                         margin-bottom: 30px;
                         line-height: 1.2;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
                         h1 {
                             font-weight: 400;
                             font-size: 48px;
-                            width: calc(100% + 80px);
-                            margin-left: -40px;
+                        }
+
+                        a:hover {
+                            color: var(--neon-blue);
                         }
                     }
                     .preview {

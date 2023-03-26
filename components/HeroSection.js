@@ -18,11 +18,11 @@ export default function HeroSection() {
                         <div className="flex-wrapper">
                             <div className="text-block">
                                 <h1>GRAND TOUR</h1>
-                                <p>Алма-Ата</p>
-                                <p>Бишкек</p>
-                                <p>Москва</p>
-                                <p>Ташкент</p>
-                                <p>Санкт-Петербург</p>
+                                <a href='#'>Алма-Ата</a>
+                                <a href='#'>Бишкек</a>
+                                <a href='#'>Москва</a>
+                                <a href='#'>Ташкент</a>
+                                <a href='#'>Санкт-Петербург</a>
                             </div>
                             <div className="preview">
                                 <img src="/images/preview-1.png" alt="Scriptonite at a concert." />
