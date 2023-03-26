@@ -155,7 +155,16 @@ section.hero {
                 > img {
                     width: 50%;
                     z-index: 0;
-                    filter: brightness(70%);
+                    filter: 
+                        brightness(60%)
+                        drop-shadow(0 0 1px #fff)
+                        drop-shadow(0 0 1px #fff)
+                        drop-shadow(0 0 1px #fff)
+                        drop-shadow(0 0 1px #fff)
+                        drop-shadow(0 0 1px #fff)
+                        drop-shadow(0 -2px 23px var(--neon-blue))
+                        drop-shadow(0 -2px 23px var(--neon-blue))
+                        ;
                 }
             }
         }

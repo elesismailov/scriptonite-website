@@ -22,7 +22,7 @@ section.email-form {
             font-size: 16px;
         }
         .terms .terms-link {
-            color: var(--error-red);
+            color: var(--bright-red);
 
             &:hover {
                 text-decoration: underline;
@@ -58,10 +58,10 @@ section.email-form {
                     margin-bottom: 15px;
 
                     &.error {
-                        border: 1px solid var(--error-red);
-                        color: var(--error-red);
+                        border: 1px solid var(--bright-red);
+                        color: var(--bright-red);
                         &::placeholder {
-                            color: var(--error-red);
+                            color: var(--bright-red);
                         }
                     }
 

@@ -7,6 +7,27 @@ footer {
         
         max-width: 1440px;
         margin: auto;
+        
+        .attribution {
+            text-align: center;
+            padding: 0 0 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            letter-spacing: .5px ;
+            font-size: 15px;
+            
+            .sa {
+                span {
+                    color: var(--neon-blue);
+                }
+            }
+            .el {
+                span {
+                    color: var(--bright-red);
+                }
+            }
+        }
         .flex-wrapper {
             display: flex;
             flex-direction: column;

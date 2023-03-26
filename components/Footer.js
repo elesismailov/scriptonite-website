@@ -17,6 +17,10 @@ export default function Footer() {
                         <img src="/images/logo.png" alt="Scriptonite Logo" />
                     </a>
                 </div>
+                <div className="attribution">
+                    <p className="sa"><a href="#" >Designed by <span>sanzhar</span></a></p>
+                    <p className="el"><a href="http://elesismailov.com" >Coded by <span>eles</span></a></p>
+                </div>
             </div>
         </footer>
     )
