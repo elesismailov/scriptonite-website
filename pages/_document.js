@@ -1,4 +1,6 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import { Html, Head, Main, NextScript } from 'next/document';
+import Script from 'next/script';
+
 
 export default function Document() {
   return (
@@ -11,6 +13,18 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
+
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-WJGJG5X89L"></Script>
+        <Script id="google-tag" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+  
+            gtag('config', 'G-WJGJG5X89L');
+          `}
+        </Script>
+        
       </body>
     </Html>
   )
